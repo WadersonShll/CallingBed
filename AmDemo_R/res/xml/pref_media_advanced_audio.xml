@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_audio_fastoutputsetup" android:key="key_audio_fastoutputsetup" android:defaultValue="true"></CheckBoxPreference>
+    <CheckBoxPreference android:title="@string/pref_audio_fastinputsetup" android:key="key_audio_fastinputsetup" android:defaultValue="false"></CheckBoxPreference>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">床头机</string>
+    <string name="loading_title">努力加载中</string>
+
+    <!--初始化提示String-->
+    <string name="DEVICE_NULL">设备未启用</string>
+    <string name="MAC_ADDRESS_NO_REGISTRATION">Mac地址未注册</string>
+    <string name="DATA_ERROR">数据Error</string>
+</resources>

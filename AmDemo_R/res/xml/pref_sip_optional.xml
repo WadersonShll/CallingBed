@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="40"
+        android:key="key_ringer_duration"
+        android:numeric="integer"
+        android:title="@string/pref_ringer_duration" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="key_local_sip_port"
+        android:numeric="integer"
+        android:title="@string/pref_local_sip_port" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="40100"
+        android:key="key_rtp_port_range"
+        android:numeric="integer"
+        android:title="@string/pref_rtp_port_range" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:inputType="textNoSuggestions"
+        android:key="key_outboundproxy"
+        android:title="@string/pref_outboundproxy" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:inputType="textNoSuggestions"
+        android:key="key_stunserver"
+        android:title="@string/pref_stunserver" >
+    </EditTextPreference>
+
+    <ListPreference
+        android:defaultValue="UDP"
+        android:entries="@array/listProtocolDisplay"
+        android:entryValues="@array/listProtocolValue"
+        android:key="key_protocol"
+        android:title="@string/pref_transportlayer" >
+    </ListPreference>
+
+    <EditTextPreference
+        android:defaultValue="600"
+        android:key="key_interval"
+        android:numeric="integer"
+        android:title="@string/pref_interval" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:inputType="textNoSuggestions"
+        android:key="key_identity"
+        android:title="@string/pref_sip_identity" >
+    </EditTextPreference>
+
+    <CheckBoxPreference
+        android:key="key_autostart"
+        android:title="@string/pref_autostart" >
+    </CheckBoxPreference>
+
+    <ListPreference
+        android:defaultValue="RTP"
+        android:entries="@array/listEncryptionDisplay"
+        android:entryValues="@array/listEncryptionValue"
+        android:key="key_encryption"
+        android:title="@string/pref_encryption" >
+    </ListPreference>
+
+</PreferenceScreen>

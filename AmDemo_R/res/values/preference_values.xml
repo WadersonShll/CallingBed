@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="listProtocolDisplay" translatable="false">
+        <item>UDP</item>
+        <item>TCP</item>
+        <item>TLS</item>
+    </string-array>
+    <string-array name="listProtocolValue" translatable="false">
+        <item>UDP</item>
+        <item>TCP</item>
+        <item>TLS</item>
+    </string-array>
+    <string-array name="listCameraFps" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="listCameraFpsValue" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="listCameraSize" translatable="false">
+        <item>default</item>
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+        <item>HD</item>
+    </string-array>
+    <string-array name="listCameraSizeValue" translatable="false">
+        <item>default</item>
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+        <item>HD</item>
+    </string-array>
+    <string-array name="listVideoUploadRate" translatable="false">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+    </string-array>
+    <string-array name="listVideoUploadRateValue" translatable="false">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+    </string-array>
+    <string-array name="listVideoDownloadRate" translatable="false">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+    </string-array>
+    <string-array name="listVideoDownloadRateValue" translatable="false">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+    </string-array>
+    <string-array name="listEncryptionDisplay" translatable="false">
+        <item>RTP</item>
+        <item>optional SRTP</item>
+        <item>SRTP</item>
+    </string-array>
+    <string-array name="listEncryptionValue" translatable="false">
+        <item>RTP</item>
+        <item>optional SRTP</item>
+        <item>SRTP</item>
+    </string-array>
+    <string-array name="listAudioProcessingAlternative" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="listAudioProcessingAlternativeValue" translatable="false">
+        <item>webrtc audio processing</item>
+        <item>speex audio processing</item>
+    </string-array>
+    
+</resources>

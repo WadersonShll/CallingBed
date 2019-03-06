@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="5"
+        android:entries="@array/listCameraFpsValue"
+        android:entryValues="@array/listCameraFps"
+        android:key="key_video_fps"
+        android:title="@string/pref_video_fps" >
+    </ListPreference>
+    <ListPreference
+        android:defaultValue="normal"
+        android:entries="@array/listCameraSizeValue"
+        android:entryValues="@array/listCameraSize"
+        android:key="key_video_size"
+        android:title="@string/pref_video_size" >
+    </ListPreference>
+    <ListPreference
+        android:defaultValue="512"
+        android:entries="@array/listVideoUploadRateValue"
+        android:entryValues="@array/listVideoUploadRate"
+        android:key="key_videouploadrate"
+        android:title="@string/pref_videouploadrate" >
+    </ListPreference>
+    <ListPreference
+        android:defaultValue="512"
+        android:entries="@array/listVideoDownloadRateValue"
+        android:entryValues="@array/listVideoDownloadRate"
+        android:key="key_videodownloadrate"
+        android:title="@string/pref_videodownloadrate" >
+    </ListPreference>
+
+    <PreferenceScreen android:title="@string/pref_videocodec" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_videocodec_h264"
+            android:title="@string/pref_videocodec_h264" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_videocodec_vp8"
+            android:title="@string/pref_videocodec_vp8" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_videocodec_mp4v"
+            android:title="@string/pref_videocodec_mp4v" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_videocodec_h2631998"
+            android:title="@string/pref_videocodec_h2631998" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_videocodec_h263"
+            android:title="@string/pref_videocodec_h263" >
+        </CheckBoxPreference>
+        
+    </PreferenceScreen>
+
+</PreferenceScreen>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/font_size_20"
+        android:layout_marginLeft="@dimen/font_size_20"
+        android:layout_marginRight="@dimen/font_size_20"
+        android:layout_marginTop="@dimen/font_size_20"
+        android:background="@drawable/shape_cost_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/view_doctor_layout_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_cost_list_title_bg">
+
+            <TextView
+                android:id="@+id/view_doctor_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="--"
+                android:textColor="#3A92D1"
+                android:textSize="@dimen/font_size_25"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_doctor_tv_inpatient_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:text="--"
+                android:textColor="#3A92D1"
+                android:textSize="@dimen/font_size_25"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/view_doctor_layout_rv_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view_doctor_layout_tv_text"
+            android:layout_below="@+id/view_doctor_layout_rl_title"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/view_doctor_layout_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_to_side_5"
+            android:layout_marginTop="@dimen/margin_to_side_5"
+            android:background="@drawable/shape_main_bg_admission"
+            android:padding="@dimen/margin_to_side_5"
+            android:paddingLeft="@dimen/margin_to_side_10"
+            android:paddingRight="@dimen/margin_to_side_10"
+            android:text="               更多信息请按右侧按键扫描二维码               "
+            android:textColor="#3A92D1"
+            android:textSize="@dimen/font_size_20" />
+    </RelativeLayout>
+</RelativeLayout>

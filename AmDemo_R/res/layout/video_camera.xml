@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TopLevelView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.vvsip.viewsip.VideoDisplay
+        android:id="@+id/video_view2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <com.vvsip.ansip.video.VideoCameraPreview
+        android:id="@+id/camera_preview2"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp" >
+    </com.vvsip.ansip.video.VideoCameraPreview>
+
+    <LinearLayout
+        android:id="@+id/ButtonRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center" >
+
+        <!-- HANG BUTTON -->
+
+        <ImageButton
+            android:id="@+id/Button_hang"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="#f22121"
+            android:clickable="true"
+            android:contentDescription="挂断"
+            android:focusable="false"
+            android:minHeight="56dp"
+            android:src="@drawable/ic_call_end_white_48dp" />
+
+        <!-- STOP VIDEO BUTTON -->
+
+        <ImageButton
+            android:id="@+id/Button_stopvideo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="#f22121"
+            android:clickable="true"
+            android:contentDescription="previous"
+            android:focusable="false"
+            android:minHeight="56dp"
+            android:src="@drawable/ic_videocam_off_white_48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonStatistics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:id="@+id/TextView_uploadrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#ffff4444"
+                android:text="up_kbps"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView_downloadrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#ffff4444"
+                android:text="down_kbps"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView_lossrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#ffff4444"
+                android:text="loss_percent"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView_remotelossrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textColor="#ffff4444"
+                android:text="loss_percent"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:id="@+id/TextView_videouploadrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#ffff4444"
+                android:text="up_kbps"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView_videodownloadrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#ffff4444"
+                android:text="down_kbps"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView_videolossrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#ffff4444"
+                android:text="loss_percent"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView_videoremotelossrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textColor="#ffff4444"
+                android:text="loss_percent"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+            </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

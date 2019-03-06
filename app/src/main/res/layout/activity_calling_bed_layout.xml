@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_calling_bed_layout_rl_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_calling_bed_layout_title"
+        layout="@layout/view_title_layout"></include>
+
+    <RelativeLayout
+        android:id="@+id/activity_calling_bed_layout_rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_calling_bed_layout_title">
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_welcome"
+            layout="@layout/view_welcome_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_main"
+            layout="@layout/view_main_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_doctor"
+            layout="@layout/view_doctor_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_cost"
+            layout="@layout/view_cost_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_qr_code"
+            layout="@layout/view_qr_code_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_support"
+            layout="@layout/view_support_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_call"
+            layout="@layout/view_call_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activity_calling_bed_layout_nurse"
+            layout="@layout/view_nurse_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_calling_bed_layout_rl_right"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/bg_right"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_doctor"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_doctor" />
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_doctor_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="医嘱"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_cost"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/activity_calling_bed_layout_tv_doctor"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_cost" />
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="费用查询"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_qr_code"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/activity_calling_bed_layout_tv_cost"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_qr_code" />
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_qr_code_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="二维码"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_support"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/activity_calling_bed_layout_tv_qr_code"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_support" />
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_support_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="请求增援"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_call"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/activity_calling_bed_layout_tv_support"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_call" />
+
+            <TextView
+                android:id="@+id/activity_calling_bed_layout_tv_call_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="呼叫护工"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

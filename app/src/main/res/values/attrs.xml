@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textFieldStyle" format="reference" />
+    <!--加载进度-->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MyTextView">
+        <attr name="speed" format="integer" />
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="progressColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="progressDescColor" format="color" />
+        <attr name="progressRadius" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="progressDesc" format="string" />
+        <attr name="isShowDesc" format="boolean" />
+        <attr name="haveChangeColor" format="boolean" />
+    </declare-styleable>
+
+</resources>

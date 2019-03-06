@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/vvsip/ansip/H264MediaCodecDecoder.java" />
+        <ignore path="src/com/vvsip/ansip/H264MediaCodecEncoder.java" />
+        <ignore path="src/com/vvsip/ansip/VvsipService.java" />
+    </issue>
+</lint>

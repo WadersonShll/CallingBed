@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_cost_layout_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+     >
+
+        <TextView
+            android:id="@+id/item_cost_layout_tv_date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_to_side_20"
+            android:lines="1"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_23" />
+
+        <TextView
+            android:id="@+id/item_cost_layout_tv_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_to_side_50"
+            android:layout_toLeftOf="@+id/item_cost_layout_tv_cost"
+            android:layout_toRightOf="@+id/item_cost_layout_tv_date"
+            android:lines="1"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_23" />
+
+
+        <TextView
+            android:id="@+id/item_cost_layout_tv_cost"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_to_side_50"
+            android:layout_marginRight="@dimen/font_size_20"
+            android:lines="1"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_23" />
+    </RelativeLayout>
+
+</LinearLayout>

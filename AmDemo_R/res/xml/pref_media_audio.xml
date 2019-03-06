@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/listAudioProcessingAlternativeValue"
+        android:entryValues="@array/listAudioProcessingAlternative"
+        android:key="key_apm_alternative"
+        android:title="@string/pref_apm_alternative" >
+    </ListPreference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="key_agc"
+        android:title="@string/pref_agc" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="key_noisesuppression"
+        android:title="@string/pref_noisesuppression" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="key_highpassfilter"
+        android:title="@string/pref_highpassfilter" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="key_echocancellation"
+        android:title="@string/pref_echocancellation" >
+    </CheckBoxPreference>
+
+    <PreferenceScreen
+        android:key="key_ps_echo_limiter"
+        android:title="@string/pref_echo_limiter" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_echo_limiter"
+            android:title="@string/pref_echo_limiter" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:defaultValue="0.02"
+            android:key="key_threshold"
+            android:numeric="decimal"
+            android:title="@string/pref_threshold" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="0.02"
+            android:key="key_speed"
+            android:numeric="decimal"
+            android:title="@string/pref_speed" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="50.0"
+            android:key="key_force"
+            android:numeric="decimal"
+            android:title="@string/pref_force" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="300"
+            android:key="key_sustain"
+            android:numeric="integer"
+            android:title="@string/pref_sustain" >
+        </EditTextPreference>
+    </PreferenceScreen>
+
+    <CheckBoxPreference
+        android:key="key_haveearpiecemode"
+        android:title="@string/pref_haveearpiecemode" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="key_apm_in_earpiecemode"
+        android:title="@string/pref_apminearpiecemode" >
+    </CheckBoxPreference>
+
+    <PreferenceScreen android:title="@string/pref_audiogain" >
+        <EditTextPreference
+            android:defaultValue="1.0"
+            android:key="key_outputgain_speakeroff"
+            android:numeric="decimal"
+            android:title="@string/pref_outputgain_speakeroff" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="1.0"
+            android:key="key_inputgain_speakeroff"
+            android:numeric="decimal"
+            android:title="@string/pref_inputgain_speakeroff" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="1.0"
+            android:key="key_outputgain_speakeron"
+            android:numeric="decimal"
+            android:title="@string/pref_outputgain_speakeron" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="1.0"
+            android:key="key_inputgain_speakeron"
+            android:numeric="decimal"
+            android:title="@string/pref_inputgain_speakeron" >
+        </EditTextPreference>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/pref_audiocodec" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_g729"
+            android:title="@string/pref_audiocodec_g729" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_silknb"
+            android:title="@string/pref_audiocodec_silknb" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_ilbc"
+            android:title="@string/pref_audiocodec_ilbc" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_audiocodec_pcmu"
+            android:title="@string/pref_audiocodec_pcmu" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_audiocodec_pcma"
+            android:title="@string/pref_audiocodec_pcma" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_silkwb"
+            android:title="@string/pref_audiocodec_silkwb" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_opus"
+            android:title="@string/pref_audiocodec_opus" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_isac16"
+            android:title="@string/pref_audiocodec_isac16" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_speex16"
+            android:title="@string/pref_audiocodec_speex16" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_audiocodec_g722"
+            android:title="@string/pref_audiocodec_g722" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_speex8"
+            android:title="@string/pref_audiocodec_speex8" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_audiocodec_gsm"
+            android:title="@string/pref_audiocodec_gsm" >
+        </CheckBoxPreference>
+    </PreferenceScreen>
+
+</PreferenceScreen>

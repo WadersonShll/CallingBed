@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AmDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="advanced_pref">Advanced Preferences</string>
+    <string name="pref_audio_advanced">Audio Options</string>
+    <string name="pref_audio_fastoutputsetup">Fast Input Setup</string>
+    <string name="pref_audio_fastinputsetup">Fast Output Setup</string>
+    <string name="pref_videocodec_advanced">Video Options</string>
+    <string name="pref_videocodec_h264_hw_decoder">HW H264 Decoder</string>
+    <string name="pref_videocodec_h264_hw_encoder">HW H264 Encoder</string>
+    <string name="pref_video_disablecamera">Disable Camera</string>
+    <string name="pref_echo_limiter">Echo Limitation</string>
+    <string name="pref_threshold">Threshold (0.02)</string>
+    <string name="pref_speed">Speed (0.02)</string>
+    <string name="pref_force">Force (50.0)</string>
+    <string name="pref_sustain">Sustain (300ms)</string>
+    <string name="pref_apm_alternative">Audio Module</string>
+    <string name="pref_agc">AGC</string>
+    <string name="pref_highpassfilter">High Pass Filter</string>
+    <string name="pref_noisesuppression">Noise Suppression</string>
+    
+    <string name="pref_audiocodec_g729" translatable="false">G729</string>
+    <string name="pref_audiocodec_silkwb" translatable="false">SILK (16Khz)</string>
+    <string name="pref_audiocodec_opus" translatable="false">OPUS</string>
+    <string name="pref_audiocodec_isac16" translatable="false">iSAC (16Khz)</string>
+    <string name="pref_audiocodec_speex16" translatable="false">speex (16KHz)</string>
+    <string name="pref_audiocodec_g722" translatable="false">g722 (16Khz)</string>
+    <string name="pref_audiocodec_silknb" translatable="false">SILK (8Khz)</string>
+    <string name="pref_audiocodec_speex8" translatable="false">speex (8KHz)</string>
+    <string name="pref_audiocodec_ilbc" translatable="false">iLBC (30ms)</string>
+    <string name="pref_audiocodec_gsm" translatable="false">GSM</string>
+    <string name="pref_audiocodec_pcmu" translatable="false">PCMU</string>
+    <string name="pref_audiocodec_pcma" translatable="false">PCMA</string>
+    <string name="pref_videocodec_vp8" translatable="false">VP8</string>
+    <string name="pref_videocodec_h264" translatable="false">H264</string>
+    <string name="pref_videocodec_h2631998" translatable="false">H263&#8211;1998</string>
+    <string name="pref_videocodec_h263" translatable="false">H263</string>
+    <string name="pref_videocodec_mp4v" translatable="false">MP4V&#8211;ES</string>
+    
+    <string name="pref_domain">Domain</string>
+    <string name="pref_username">Username</string>
+    <string name="pref_password">Password</string>
+    <string name="pref_optional_settings">Extra SIP Settings</string>
+    <string name="pref_ringer_duration">Ringer Duration</string>
+    <string name="pref_local_sip_port">Local SIP Port</string>
+    <string name="pref_rtp_port_range">RTP Port range</string>
+    <string name="pref_sip_identity">SIP Identity</string>
+    <string name="pref_outboundproxy">SIP Outbound Proxy</string>
+    <string name="pref_stunserver">STUN Server</string>
+    <string name="pref_transportlayer">Protocol</string>
+    <string name="pref_interval">refresh interval</string>
+    <string name="pref_autostart">Start On Boot</string>
+    <string name="pref_audio_parameters">Audio Parameters</string>
+    <string name="pref_echocancellation">Echo Cancellation</string>
+    <string name="pref_haveearpiecemode">Smartphone (vs tablet)?</string>
+    <string name="pref_apminearpiecemode">Audio Module in earpiece mode</string>
+    <string name="pref_audiocodec">Audio Codecs</string>
+    <string name="pref_audiogain">Audio Gains</string>
+    <string name="pref_outputgain_speakeroff">Output</string>
+    <string name="pref_inputgain_speakeroff">Input</string>
+    <string name="pref_outputgain_speakeron">Output (Speaker Mode)</string>
+    <string name="pref_inputgain_speakeron">Input (Speaker Mode)</string>
+    <string name="pref_video_parameters">Video Parameters</string>
+    <string name="pref_video_fps">Frame per second (fps)</string>
+    <string name="pref_video_size">Image Size</string>
+    <string name="pref_videouploadrate">Max Upload Rate</string>
+    <string name="pref_videodownloadrate">Max Download Rate</string>
+    <string name="pref_videocodec">Video Codec</string>
+    <string name="pref_encryption">encryption</string>
+
+</resources>

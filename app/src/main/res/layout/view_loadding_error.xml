@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/msg_network" />
+
+        <Button
+            android:id="@+id/pager_error_loadingAgain"
+            android:layout_width="112dip"
+            android:layout_height="32dip"
+            android:layout_marginTop="13dip"
+            android:background="@drawable/net_error_loading_selector" />
+
+        <TextView
+            android:id="@+id/pager_error_tv_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dip"
+            android:textSize="@dimen/font_size_25" />
+    </LinearLayout>
+</FrameLayout>

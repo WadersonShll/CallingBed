@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="key_videocodec_advanced">
+    <CheckBoxPreference android:title="@string/pref_videocodec_h264_hw_encoder" android:key="key_videocodec_h264_hw_encoder" android:defaultValue="false"></CheckBoxPreference>
+    <CheckBoxPreference android:title="@string/pref_videocodec_h264_hw_decoder" android:key="key_videocodec_h264_hw_decoder" android:defaultValue="false"></CheckBoxPreference>
+    <CheckBoxPreference android:title="@string/pref_video_disablecamera" android:key="key_video_disablecamera" android:defaultValue="false"></CheckBoxPreference>
+</PreferenceScreen>
